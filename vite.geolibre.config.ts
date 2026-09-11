@@ -1,0 +1,35 @@
+import { defineConfig } from "vite";
+import { resolve, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
+export default defineConfig({
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "src"),
+    },
+  },
+  build: {
+    lib: {
+      entry: resolve(__dirname, "src/geolibre.ts"),
+      formats: ["es"],
+      fileName: () => "index.js",
+    },
+    outDir: "geolibre-plugin/dist",
+    emptyOutDir: true,
+    rollupOptions: {
+      external: ["maplibre-gl"],
+      output: {
+        globals: {
+          "maplibre-gl": "maplibregl",
+        },
+        inlineDynamicImports: true,
+        assetFileNames: () => "style.css",
+      },
+    },
+    cssCodeSplit: false,
+    sourcemap: false,
+    minify: false,
+  },
+});
