@@ -115,12 +115,12 @@
 
 .contour-status-success {
   background: rgba(34, 197, 94, 0.1);
-  color: #16a34a;
+  color: #15803d;
 }
 
 .contour-status-error {
   background: rgba(239, 68, 68, 0.1);
-  color: #dc2626;
+  color: #b91c1c;
 }
 
 .contour-status-loading {
