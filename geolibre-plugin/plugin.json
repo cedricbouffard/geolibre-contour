@@ -1,7 +1,7 @@
 {
   "id": "geolibre-contour",
   "name": "Contour Lines from DEM",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "entry": "dist/index.js",
   "description": "Generate contour lines from any cloud-hosted COG/DEM raster using maplibre-contour.",
   "style": "dist/style.css"

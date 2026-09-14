@@ -1,6 +1,6 @@
 {
   "name": "geolibre-contour",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "GeoLibre plugin to add contour lines from a cloud-hosted DEM (COG) using maplibre-contour",
   "type": "module",
   "scripts": {

@@ -12605,7 +12605,7 @@ let disposePanel = null;
 const plugin = {
   id: "geolibre-contour",
   name: "Contour Lines from DEM",
-  version: "0.3.7",
+  version: "0.3.8",
   engines: ["maplibre"],
   urlParameterNames: ["contourCogUrl"],
   activate(app) {

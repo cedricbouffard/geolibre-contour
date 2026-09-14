@@ -10,7 +10,7 @@ let disposePanel: (() => void) | null = null;
 export const plugin: GeoLibrePlugin = {
   id: "geolibre-contour",
   name: "Contour Lines from DEM",
-  version: "0.3.7",
+  version: "0.3.8",
   engines: ["maplibre"],
   urlParameterNames: ["contourCogUrl"],
 
